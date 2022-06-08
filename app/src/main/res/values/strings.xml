@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MyTrace</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="Spinner">spinner</string>
+    <string name="_usertype">Usertype</string>
+    <string name="todo">TODO</string>
+    <string name="btn_add_dependent">Add Dependent</string>
+    <string name="btn_register">Register</string>
+    <string name="user_name_rg">User Name</string>
+    <string name="full_name_rg">Full name</string>
+    <string name="nric_passport_rg">NRIC/Passport</string>
+    <string name="email_address_rg">Email/PhoneNum</string>
+    <string name="age_rg">Age</string>
+    <string name="Password_rg">Password</string>
+    <string name="Re_enter_password_rg">Re-enter password</string>
+    <string name="enter_otp_number_rg1">Enter OTP number</string>
+    <string name="btn_next_rg_page2">NEXT</string>
+    <string name="submit_rg">Submit</string>
+    <string-array name="usertype">
+        <item>user</item>
+        <item>admin</item>
+
+    </string-array>
+
+</resources>
+
