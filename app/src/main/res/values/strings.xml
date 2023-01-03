@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">MyTrace</string>
 
-    <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password" translatable="false">Password</string>
     <string name="btn_login">Login</string>
     <string name="Spinner">spinner</string>
     <string name="_usertype">Usertype</string>
@@ -19,9 +19,16 @@
     <string name="enter_otp_number_rg1">Enter OTP number</string>
     <string name="btn_next_rg_page2">NEXT</string>
     <string name="submit_rg">Submit</string>
+    <string name="savebtn_tgr_id">Save</string>
+    <string name="english_language">English</string>
+    <string name="malay_language">Malay</string>
+    <string name="username_personal">SALEH AHMED BIN SALEH</string>
+
     <string-array name="usertype">
         <item>user</item>
         <item>admin</item>
+        <item>MOH-User</item>
+
 
     </string-array>
 
