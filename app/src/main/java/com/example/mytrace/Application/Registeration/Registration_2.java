@@ -12,7 +12,7 @@ import com.example.mytrace.R;
 public class Registration_2 extends AppCompatActivity {
 
     Button button3;
-
+/*
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registeration_2);
@@ -33,7 +33,7 @@ public class Registration_2 extends AppCompatActivity {
         Intent intent3 = new Intent(Registration_2.this, Registration_3.class);
         startActivity(intent3);
     }
-
+*/
 
 }
 

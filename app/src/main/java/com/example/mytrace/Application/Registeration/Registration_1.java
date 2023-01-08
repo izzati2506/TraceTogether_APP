@@ -11,13 +11,15 @@ import com.example.mytrace.Application.Login.Login;
 import com.example.mytrace.R;
 
 public class Registration_1 extends AppCompatActivity {
-
+/*
     Button button2;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registeration_1);
 
             button2=(Button) findViewById(R.id.button2);
+
+
 
             button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +38,7 @@ public class Registration_1 extends AppCompatActivity {
 
     }
 
-
+*/
 }
 
 
