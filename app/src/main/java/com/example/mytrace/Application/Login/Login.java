@@ -43,15 +43,16 @@ FirebaseAuth mAuth;
 
         btn_register =(Button) findViewById(R.id.btn_register);
         btn_register.setOnClickListener(this);
+
         btn_login=(Button) findViewById(R.id.btn_login);
         btn_login.setOnClickListener(this);
 
         ForgotPassowrdBt=findViewById(R.id.ForgotPassowrdBt);
         ForgotPassowrdBt.setOnClickListener(this);
 
-             email=(EditText) findViewById(R.id.email);
-             password=(EditText) findViewById(R.id.password);
-             spinner=(Spinner) findViewById(R.id.spinner);
+        email=(EditText) findViewById(R.id.email);
+        password=(EditText) findViewById(R.id.password);
+        spinner=(Spinner) findViewById(R.id.spinner);
 
            /*
         ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this, R.array.usertype, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item  );
@@ -118,13 +119,11 @@ FirebaseAuth mAuth;
     public void onClick(View v) {
         switch (v.getId()){
 
-
             case R.id.btn_register:
                 startActivity(new Intent(Login.this,Registration_3.class));
-
+                break;
             case R.id.ForgotPassowrdBt:
                startActivity(new Intent(this,Forget_password.class));
-
                 break;
             case R.id.btn_login:
                 UserLogin();

@@ -67,6 +67,7 @@ public class Registration_3 extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
+
         switch (v.getId()){
             case R.id.NvToLogin:
                 startActivity(new Intent(this,Login.class));
@@ -136,22 +137,23 @@ public class Registration_3 extends AppCompatActivity implements View.OnClickLis
 
 
         progressBar.setVisibility(View.VISIBLE);
-
         firebaseAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
                             Users user = new Users(fullName, age, email);
 
-                            FirebaseDatabase.getInstance().getReference("Users")
+                                 FirebaseDatabase.getInstance().getReference("Users")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
 
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
+
                                             if (task.isSuccessful()) {
-                                                Toast.makeText(Registration_3.this, "User has been registered succeessfully! ", Toast.LENGTH_LONG).show();
+                                                Toast.makeText(Registration_3.this, "User has been registered successfully! ", Toast.LENGTH_LONG).show();
                                                 progressBar.setVisibility(View.GONE);
                                                 Intent intent4 = new Intent(Registration_3.this, Login.class);
                                                 startActivity(intent4);
